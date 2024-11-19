@@ -1,10 +1,18 @@
 package steps;
 
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import java.util.List;
+//import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
+
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -35,7 +43,7 @@ public class loginStep {
 		
 		SeleniumDriver.Wait().until(ExpectedConditions.urlContains("dashboard"));
 
-		//Thread.sleep(10000);
+		//Thread.sleep(5000);
 		
 		System.out.println("user is on dashboard: " + LoginActions.DashboardPageTitle() );
 	   Assert.assertEquals(LoginActions.DashboardPageTitle(), DashboardPageUrl);

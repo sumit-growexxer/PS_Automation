@@ -46,10 +46,6 @@ public class OperationsSalesReportsMyOrderSteps {
 	@Then("user is on My orders page")
 	public void user_is_on_my_orders_page() {
 	   System.out.println("user is on My order page");
-	   
-	   
-	   
-	   
 	}
 
 }

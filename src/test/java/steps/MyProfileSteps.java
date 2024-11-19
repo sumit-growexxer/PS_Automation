@@ -30,14 +30,12 @@ public class MyProfileSteps {
 
 	@When("Click on profile dropdown")
 	public void click_on_profile_dropdown() throws InterruptedException {
-	    MyProfileActions.clickOnProfileMenu();
+	    MyProfileActions.HoverToProfileMenu();
 	}
 
 	@And("Cick on Myprofile link")
-	public void cick_on_myprofile_link() throws InterruptedException {
+	public void cick_on_myprofile_link() {
 	    MyProfileActions.clickOnMyProfileLink();
-	    
-	    Thread.sleep(2000);
 	}
 
 	@Then("Myprofile page is displayed")
@@ -51,9 +49,9 @@ public class MyProfileSteps {
 	   
 		//MyProfileActions.clickOnProfileMenu();
 		
-		Thread.sleep(2000);
-		//TEST
-	//	MyProfileActions.clickOnlogout();
+		Thread.sleep(1000);
+		
+		//MyProfileActions.clickOnlogout();
 		
 	}
 	

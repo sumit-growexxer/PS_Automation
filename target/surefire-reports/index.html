@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,24 +21,25 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
               <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -49,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>testng.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\User\Documents\NavigatorAutomation\src\test\resources\runner\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,13 +103,18 @@
                     </span>
                     <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;User navigates to sales report sale orders page&quot;, &quot;Sales report Sales orders page&quot;)">runScenario("User navigates to sales report sale orders page", "Sales report Sales orders page")</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.RunCuke" hash-for-method="runScenario(&quot;User navigates to sales orders page&quot;, &quot;Optional[Sales report my orders page]&quot;)">runScenario("User navigates to sales orders page", "Optional[Sales report my orders page]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;valiudate whether the Excel to export is working or not&quot;, &quot;Sales report Sales orders page&quot;)">runScenario("valiudate whether the Excel to export is working or not", "Sales report Sales orders page")</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.RunCuke" hash-for-method="runScenario(&quot;User navigates to sales report My orders page&quot;, &quot;Optional[Sales report my orders page]&quot;)">runScenario("User navigates to sales report My orders page", "Optional[Sales report my orders page]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.RunCuke" hash-for-method="runScenario(&quot;User should be able to navigate to Myprofile page&quot;, &quot;Optional[MyProfile]&quot;)">runScenario("User should be able to navigate to Myprofile page", "Optional[MyProfile]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -121,18 +127,8 @@
                     </span>
                     <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;User should be able to navigate to Myprofile page&quot;, &quot;MyProfile&quot;)">runScenario("User should be able to navigate to Myprofile page", "MyProfile")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;User navigates to sales report My orders page&quot;, &quot;Sales report my orders page&quot;)">runScenario("User navigates to sales report My orders page", "Sales report my orders page")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;External User logs into application with valid username and password&quot;, &quot;Application Login&quot;)">runScenario("External User logs into application with valid username and password", "Application Login")</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.RunCuke" hash-for-method="runScenario(&quot;External User logs into application with valid username and password&quot;, &quot;Optional[Application Login]...)">runScenario("External User logs into application with valid username and password", "Optional[Application Login]...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -155,34 +151,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User navigates to sales report sale orders page&quot;, &quot;Sales report Sales orders page&quot;)">
-                  </a> <!-- runScenario("User navigates to sales report sale orders page", "Sales report Sales orders page") -->
+                  <a name="runScenario(&quot;User navigates to sales orders page&quot;, &quot;Optional[Sales report my orders page]&quot;)">
+                  </a> <!-- runScenario("User navigates to sales orders page", "Optional[Sales report my orders page]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User navigates to sales report sale orders page","Sales report Sales orders page")</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;...&lt;/a&gt; is not clickable at point (199, 88). Other element would receive the click: &lt;div class=&quot;spinner&quot; role=&quot;progressbar&quot; style=&quot;position: absolute; width: 0px; z-index: 2000000000; left: 50%; top: 50%;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=115.0.5790.110)
-Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;growlt105&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-79-generic&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a72e81cc58c26e969f1345121aac291d, clickElement {id=431EB99C89CDFDCD4D1812C7760CEFF0_element_312}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WNWHxd}, goog:chromeOptions: {debuggerAddress: localhost:36091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36091/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (a72e81cc58c26e969f1345121aac291d)] -&gt; xpath: //a[normalize-space()=&apos;Operations&apos;]]
-Session ID: a72e81cc58c26e969f1345121aac291d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at page.actions.OperationsSalesReportsMyOrderActions.ClickOnOperationsLink(OperationsSalesReportsMyOrderActions.java:21)
-	at steps.OperationsSalesReportsMyOrderSteps.click_on_operation(OperationsSalesReportsMyOrderSteps.java:29)
-	at ✽.Click on Operation(file:///home/growlt105/eclipse-workspace/NavigatorAutomationGIT/PSI-Automation/src/test/resources/Featuresfile/OperationsSalesReportsSalesOrders.feature:5)
-... Removed 9 stack frames
+                  <span class="parameters">("User navigates to sales orders page", "Optional[Sales report my orders page]")</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Element must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.interactions.PointerInput$Origin.fromElement(PointerInput.java:293)
+	at org.openqa.selenium.interactions.Actions.moveInTicks(Actions.java:351)
+	at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:330)
+	at steps.SalesOrdersSteps.hover_to_operations(SalesOrdersSteps.java:28)
+	at ✽.Hover to Operations(file:///C:/Users/User/Documents/NavigatorAutomation/src/test/resources/Featuresfile/SalesOrder.feature:5)
+
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -190,35 +170,52 @@ Session ID: a72e81cc58c26e969f1345121aac291d
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;valiudate whether the Excel to export is working or not&quot;, &quot;Sales report Sales orders page&quot;)">
-                  </a> <!-- runScenario("valiudate whether the Excel to export is working or not", "Sales report Sales orders page") -->
+                  <a name="runScenario(&quot;User navigates to sales report My orders page&quot;, &quot;Optional[Sales report my orders page]&quot;)">
+                  </a> <!-- runScenario("User navigates to sales report My orders page", "Optional[Sales report my orders page]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("valiudate whether the Excel to export is working or not","Sales report Sales orders page")</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;growlt105&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-79-generic&apos;, java.version: &apos;16.0.1&apos;
+                  <span class="parameters">("User navigates to sales report My orders page", "Optional[Sales report my orders page]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()=&apos;Operations&apos;]&quot;}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a72e81cc58c26e969f1345121aac291d, clickElement {id=431EB99C89CDFDCD4D1812C7760CEFF0_element_312}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WNWHxd}, goog:chromeOptions: {debuggerAddress: localhost:36091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36091/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (a72e81cc58c26e969f1345121aac291d)] -&gt; xpath: //a[normalize-space()=&apos;Operations&apos;]]
-Session ID: a72e81cc58c26e969f1345121aac291d
+Command: [a5548620e22def0846c22df6ed890181, findElement {using=xpath, value=//a[normalize-space()=&apos;Operations&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53380}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53380/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5548620e22def0846c22df6ed890181
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
 	at page.actions.OperationsSalesReportsMyOrderActions.ClickOnOperationsLink(OperationsSalesReportsMyOrderActions.java:21)
 	at steps.OperationsSalesReportsMyOrderSteps.click_on_operation(OperationsSalesReportsMyOrderSteps.java:29)
-	at ✽.Click on Operation(file:///home/growlt105/eclipse-workspace/NavigatorAutomationGIT/PSI-Automation/src/test/resources/Featuresfile/OperationsSalesReportsSalesOrders.feature:12)
-... Removed 9 stack frames
+	at ✽.Click on Operation(file:///C:/Users/User/Documents/NavigatorAutomation/src/test/resources/Featuresfile/OperationsSalesReportsMyOrder.feature:5)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User should be able to navigate to Myprofile page&quot;, &quot;Optional[MyProfile]&quot;)">
+                  </a> <!-- runScenario("User should be able to navigate to Myprofile page", "Optional[MyProfile]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User should be able to navigate to Myprofile page", "Optional[MyProfile]")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Park Street | My Profile] but found [Park Street | Dashboard]
+	at steps.MyProfileSteps.myprofile_page_is_displayed(MyProfileSteps.java:48)
+	at ✽.Myprofile page is displayed(file:///C:/Users/User/Documents/NavigatorAutomation/src/test/resources/Featuresfile/MyProfile.feature:8)
+... Removed 6 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -234,30 +231,10 @@ Session ID: a72e81cc58c26e969f1345121aac291d
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User should be able to navigate to Myprofile page&quot;, &quot;MyProfile&quot;)">
-                  </a> <!-- runScenario("User should be able to navigate to Myprofile page", "MyProfile") -->
+                  <a name="runScenario(&quot;External User logs into application with valid username and password&quot;, &quot;Optional[Application Login]...)">
+                  </a> <!-- runScenario("External User logs into application with valid username and password", "Optional[Application Login]...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able to navigate to Myprofile page","MyProfile")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User navigates to sales report My orders page&quot;, &quot;Sales report my orders page&quot;)">
-                  </a> <!-- runScenario("User navigates to sales report My orders page", "Sales report my orders page") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User navigates to sales report My orders page","Sales report my orders page")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;External User logs into application with valid username and password&quot;, &quot;Application Login&quot;)">
-                  </a> <!-- runScenario("External User logs into application with valid username and password", "Application Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("External User logs into application with valid username and password","Application Login")</span>
+                  <span class="parameters">("External User logs into application with valid username and password", "Optional[Application Login]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -267,14 +244,14 @@ Session ID: a72e81cc58c26e969f1345121aac291d
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/growlt105/eclipse-workspace/NavigatorAutomationGIT/PSI-Automation/src/test/resources/runner/testng.xml</span>
+            <span class="header-content">C:\Users\User\Documents\NavigatorAutomation\src\test\resources\runner\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;runner.RunCuke&quot;/&gt;
     &lt;/classes&gt;
@@ -324,32 +301,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.RunCuke')
-data.setCell(0, 3, 41670);
+data.setCell(0, 3, 30087);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.RunCuke')
-data.setCell(1, 3, 26723);
+data.setCell(1, 3, 18930);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runner.RunCuke')
-data.setCell(2, 3, 25263);
+data.setCell(2, 3, 417);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runner.RunCuke')
-data.setCell(3, 3, 9346);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'runScenario')
-data.setCell(4, 2, 'runner.RunCuke')
-data.setCell(4, 3, 1131);
+data.setCell(3, 3, 8);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -377,36 +350,34 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.RunCuke</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@4a22e4d7)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@cb0f763)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("External User logs into application with valid username and password", "Application Login")</span>
-                <span class="method-start">512 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User should be able to navigate to Myprofile page", "MyProfile")</span>
-                <span class="method-start">42184 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User navigates to sales report My orders page", "Sales report my orders page")</span>
-                <span class="method-start">51533 ms</span>
+                <span class="method-name">runScenario("External User logs into application with valid username and password", "Optional[Application Login]...)</span>
+                <span class="method-start">340 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("User navigates to sales report sale orders page", "Sales report Sales orders page")</span>
-                <span class="method-start">78256 ms</span>
+                <span class="method-name">runScenario("User should be able to navigate to Myprofile page", "Optional[MyProfile]")</span>
+                <span class="method-start">19272 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("valiudate whether the Excel to export is working or not", "Sales report Sales orders page")</span>
-                <span class="method-start">79394 ms</span>
+                <span class="method-name">runScenario("User navigates to sales report My orders page", "Optional[Sales report my orders page]")</span>
+                <span class="method-start">19695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("User navigates to sales orders page", "Optional[Sales report my orders page]")</span>
+                <span class="method-start">49783 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">104675 ms</span>
+                <span class="method-start">49792 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

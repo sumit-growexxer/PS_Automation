@@ -1,5 +1,6 @@
 package page.actions;
 
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import page.locators.LoginLocators;
@@ -23,6 +24,15 @@ public MyProfileActions() {
 		MyProfileLocators.ProfileMenu.click();
 		
 	}
+	
+public void HoverToProfileMenu() {
+		
+		Actions action = new Actions(SeleniumDriver.getDriver());
+		
+		action.moveToElement(MyProfileLocators.ProfileMenu).perform();
+		
+	}
+	
 	
      public void clickOnMyProfileLink() {
 		

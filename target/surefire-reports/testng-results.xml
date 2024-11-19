@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results skipped="0" failed="3" ignored="0" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-22T14:30:49 IST" name="Suite" finished-at="2023-08-22T14:32:34 IST" duration-ms="105164">
+  <suite name="Suite" duration-ms="49826" started-at="2024-11-18T15:20:24 IST" finished-at="2024-11-18T15:21:14 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@67080771]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@56aac163]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-08-22T14:30:49 IST" name="Test" finished-at="2023-08-22T14:32:34 IST" duration-ms="105164">
+    <test name="Test" duration-ms="49826" started-at="2024-11-18T15:20:24 IST" finished-at="2024-11-18T15:21:14 IST">
       <class name="runner.RunCuke">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCuke@67080771]" started-at="2023-08-22T14:30:49 IST" name="setUpClass" finished-at="2023-08-22T14:30:49 IST" duration-ms="505" status="PASS">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCuke@56aac163]" name="setUpClass" is-config="true" duration-ms="334" started-at="2024-11-18T15:20:24 IST" finished-at="2024-11-18T15:20:25 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4a22e4d7]]>
+                <![CDATA[org.testng.TestRunner@cb0f763]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@67080771]" started-at="2023-08-22T14:30:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-22T14:31:31 IST" duration-ms="41670" status="PASS">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@56aac163]" name="runScenario" duration-ms="18930" started-at="2024-11-18T15:20:25 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-18T15:20:44 IST">
           <params>
             <param index="0">
               <value>
@@ -30,14 +30,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Application Login"]]>
+                <![CDATA["Optional[Application Login]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@67080771]" started-at="2023-08-22T14:31:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-22T14:31:40 IST" duration-ms="9346" status="PASS">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@56aac163]" name="runScenario" duration-ms="417" started-at="2024-11-18T15:20:44 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-18T15:20:44 IST">
           <params>
             <param index="0">
               <value>
@@ -46,14 +46,31 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["MyProfile"]]>
+                <![CDATA["Optional[MyProfile]"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Park Street | My Profile] but found [Park Street | Dashboard]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Park Street | My Profile] but found [Park Street | Dashboard]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at steps.MyProfileSteps.myprofile_page_is_displayed(MyProfileSteps.java:48)
+at ✽.Myprofile page is displayed(file:///C:/Users/User/Documents/NavigatorAutomation/src/test/resources/Featuresfile/MyProfile.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@67080771]" started-at="2023-08-22T14:31:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-22T14:32:07 IST" duration-ms="26723" status="PASS">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@56aac163]" name="runScenario" duration-ms="30087" started-at="2024-11-18T15:20:44 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-18T15:21:14 IST">
           <params>
             <param index="0">
               <value>
@@ -62,144 +79,91 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales report my orders page"]]>
+                <![CDATA["Optional[Sales report my orders page]"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Operations']"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a5548620e22def0846c22df6ed890181, findElement {using=xpath, value=//a[normalize-space()='Operations']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53380}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53380/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5548620e22def0846c22df6ed890181]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Operations']"}
+  (Session info: chrome=131.0.6778.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a5548620e22def0846c22df6ed890181, findElement {using=xpath, value=//a[normalize-space()='Operations']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53380}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53380/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5548620e22def0846c22df6ed890181
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy25.click(Unknown Source)
+at page.actions.OperationsSalesReportsMyOrderActions.ClickOnOperationsLink(OperationsSalesReportsMyOrderActions.java:21)
+at steps.OperationsSalesReportsMyOrderSteps.click_on_operation(OperationsSalesReportsMyOrderSteps.java:29)
+at ✽.Click on Operation(file:///C:/Users/User/Documents/NavigatorAutomation/src/test/resources/Featuresfile/OperationsSalesReportsMyOrder.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@67080771]" started-at="2023-08-22T14:32:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-22T14:32:08 IST" duration-ms="1131" status="FAIL">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@56aac163]" name="runScenario" duration-ms="8" started-at="2024-11-18T15:21:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-18T15:21:14 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User navigates to sales report sale orders page"]]>
+                <![CDATA["User navigates to sales orders page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales report Sales orders page"]]>
+                <![CDATA["Optional[Sales report my orders page]"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[element click intercepted: Element <a href="#" class="dropdown-toggle" data-toggle="dropdown">...</a> is not clickable at point (199, 88). Other element would receive the click: <div class="spinner" role="progressbar" style="position: absolute; width: 0px; z-index: 2000000000; left: 50%; top: 50%;">...</div>
-  (Session info: chrome=115.0.5790.110)
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'growlt105', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-79-generic', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a72e81cc58c26e969f1345121aac291d, clickElement {id=431EB99C89CDFDCD4D1812C7760CEFF0_element_312}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WNWHxd}, goog:chromeOptions: {debuggerAddress: localhost:36091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36091/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (a72e81cc58c26e969f1345121aac291d)] -> xpath: //a[normalize-space()='Operations']]
-Session ID: a72e81cc58c26e969f1345121aac291d]]>
+              <![CDATA[Element must be set]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="dropdown-toggle" data-toggle="dropdown">...</a> is not clickable at point (199, 88). Other element would receive the click: <div class="spinner" role="progressbar" style="position: absolute; width: 0px; z-index: 2000000000; left: 50%; top: 50%;">...</div>
-  (Session info: chrome=115.0.5790.110)
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'growlt105', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-79-generic', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a72e81cc58c26e969f1345121aac291d, clickElement {id=431EB99C89CDFDCD4D1812C7760CEFF0_element_312}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WNWHxd}, goog:chromeOptions: {debuggerAddress: localhost:36091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36091/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (a72e81cc58c26e969f1345121aac291d)] -> xpath: //a[normalize-space()='Operations']]
-Session ID: a72e81cc58c26e969f1345121aac291d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-at page.actions.OperationsSalesReportsMyOrderActions.ClickOnOperationsLink(OperationsSalesReportsMyOrderActions.java:21)
-at steps.OperationsSalesReportsMyOrderSteps.click_on_operation(OperationsSalesReportsMyOrderSteps.java:29)
-at ✽.Click on Operation(file:///home/growlt105/eclipse-workspace/NavigatorAutomationGIT/PSI-Automation/src/test/resources/Featuresfile/OperationsSalesReportsSalesOrders.feature:5)
+              <![CDATA[java.lang.IllegalArgumentException: Element must be set
+at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+at org.openqa.selenium.interactions.PointerInput$Origin.fromElement(PointerInput.java:293)
+at org.openqa.selenium.interactions.Actions.moveInTicks(Actions.java:351)
+at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:330)
+at steps.SalesOrdersSteps.hover_to_operations(SalesOrdersSteps.java:28)
+at ✽.Hover to Operations(file:///C:/Users/User/Documents/NavigatorAutomation/src/test/resources/Featuresfile/SalesOrder.feature:5)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@67080771]" started-at="2023-08-22T14:32:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-22T14:32:33 IST" duration-ms="25263" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["valiudate whether the Excel to export is working or not"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales report Sales orders page"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'growlt105', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-79-generic', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a72e81cc58c26e969f1345121aac291d, clickElement {id=431EB99C89CDFDCD4D1812C7760CEFF0_element_312}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WNWHxd}, goog:chromeOptions: {debuggerAddress: localhost:36091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36091/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (a72e81cc58c26e969f1345121aac291d)] -> xpath: //a[normalize-space()='Operations']]
-Session ID: a72e81cc58c26e969f1345121aac291d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'growlt105', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-79-generic', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a72e81cc58c26e969f1345121aac291d, clickElement {id=431EB99C89CDFDCD4D1812C7760CEFF0_element_312}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WNWHxd}, goog:chromeOptions: {debuggerAddress: localhost:36091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36091/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (a72e81cc58c26e969f1345121aac291d)] -> xpath: //a[normalize-space()='Operations']]
-Session ID: a72e81cc58c26e969f1345121aac291d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-at page.actions.OperationsSalesReportsMyOrderActions.ClickOnOperationsLink(OperationsSalesReportsMyOrderActions.java:21)
-at steps.OperationsSalesReportsMyOrderSteps.click_on_operation(OperationsSalesReportsMyOrderSteps.java:29)
-at ✽.Click on Operation(file:///home/growlt105/eclipse-workspace/NavigatorAutomationGIT/PSI-Automation/src/test/resources/Featuresfile/OperationsSalesReportsSalesOrders.feature:12)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCuke@67080771]" started-at="2023-08-22T14:32:33 IST" name="tearDownClass" finished-at="2023-08-22T14:32:34 IST" duration-ms="472" status="PASS">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke@56aac163]" name="tearDownClass" is-config="true" duration-ms="22" started-at="2024-11-18T15:21:14 IST" finished-at="2024-11-18T15:21:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

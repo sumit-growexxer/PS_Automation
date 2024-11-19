@@ -6,8 +6,8 @@
       <class name="runner.RunCuke">
         <methods>
           <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="3 4"/>
         </methods>
       </class> <!-- runner.RunCuke -->
     </classes>

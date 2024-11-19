@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 
@@ -28,19 +27,16 @@ public class SeleniumDriver {
 
 	    SeleniumDriver() {
 
-	    	//System.setProperty("webdriver.chrome.driver","chromedriver.exe"); 
-	    	
-	    	System.setProperty("webdriver.http.factory", "jdk-http-client");
-	    	
-	    	WebDriverManager.chromedriver().setup();
+	    	System.setProperty("webdriver.chrome.driver","chromedriver.exe"); 
+	    	//WebDriverManager.chromedriver().clearDriverCache().setup();
+	    	//WebDriverManager.chromedriver().clearResolutionCache().setup();
+	    	//WebDriverManager.chromedriver().setup();
 	        driver = new ChromeDriver();
 	    	ChromeOptions options = new ChromeOptions(); 
 	    	options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 	    	options.addArguments("--no-sandbox");
 	    	options.addArguments("--headless");
 			options.addArguments("--disable-gpu");// Bypass OS security model
-			options.addArguments("--remote-allow-origins=*");
-		//	ChromeDriver driver = new ChromeDriver(options);
 	    //	WebDriver driver = new ChromeDriver(options);
 	    	
 	        driver.manage().window().maximize();
@@ -73,7 +69,7 @@ public class SeleniumDriver {
 	      
 	    }
 
-	    @AfterSuite
+	//    @AfterSuite
 	    public static void tearDown() {
 	        if (driver != null) {
 	            driver.quit();
