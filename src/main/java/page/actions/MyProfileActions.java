@@ -2,8 +2,7 @@ package page.actions;
 
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-
-import page.locators.LoginLocators;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import page.locators.MyProfileLocators;
 import utils.SeleniumDriver;
 
@@ -26,6 +25,9 @@ public MyProfileActions() {
 	}
 	
 public void HoverToProfileMenu() {
+	
+	
+	SeleniumDriver.Wait().until(ExpectedConditions.elementToBeClickable(MyProfileLocators.ProfileMenu));
 		
 		Actions action = new Actions(SeleniumDriver.getDriver());
 		
@@ -47,6 +49,9 @@ public void HoverToProfileMenu() {
  	}
      
      public String verifyMyProfilePagetitle() {
+    	 
+    	 
+    	// SeleniumDriver.Wait().until(ExpectedConditions.titleContains("My Profile") );
     	 
     	return SeleniumDriver.getDriver().getTitle();
     	

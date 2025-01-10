@@ -1,16 +1,13 @@
 package utils;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
 
-import io.cucumber.java.After;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SeleniumDriver {
 	
@@ -25,7 +22,7 @@ public class SeleniumDriver {
 	    public final static int TIMEOUT = 30;
 	    public final static int PAGE_LOAD_TIMEOUT = 50;
 
-	    SeleniumDriver() {
+	  private SeleniumDriver() {
 
 	    	System.setProperty("webdriver.chrome.driver","chromedriver.exe"); 
 	    	//WebDriverManager.chromedriver().clearDriverCache().setup();
@@ -41,9 +38,10 @@ public class SeleniumDriver {
 	    	
 	        driver.manage().window().maximize();
 
-	        wait = new WebDriverWait(driver, Duration.ofSeconds(120, 1));
-	        driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
-	        driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+	        wait = new WebDriverWait(driver, Duration.ofSeconds(60, 1
+	        		));
+	       // driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
+	        //driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	        String window=driver.getWindowHandle();
 	        System.out.println("Window ->"+window);
 	       

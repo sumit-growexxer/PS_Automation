@@ -1,6 +1,13 @@
-runner\RunCuke.class
-steps\AfterActions.class
+steps\PurchaseOrdersSteps.class
+steps\CommonSteps.class
 steps\loginStep.class
-steps\OperationsSalesReportsMyOrderSteps.class
+steps\SalesOrdersSteps.class
+steps\CollectionSteps.class
+steps\ShipmentsSteps.class
 steps\MyProfileSteps.class
 steps\BeforeActions.class
+runner\RunCuke.class
+steps\AfterActions.class
+steps\ChargebacksSteps.class
+steps\InvoiceManagementSteps.class
+steps\BillManagementSteps.class

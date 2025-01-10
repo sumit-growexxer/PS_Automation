@@ -2,16 +2,12 @@ package steps;
 
 import static org.testng.Assert.assertEquals;
 
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import page.actions.LoginActions;
 import page.actions.MyProfileActions;
-import utils.SeleniumDriver;
 
 public class MyProfileSteps {
 	
@@ -22,7 +18,9 @@ public class MyProfileSteps {
 	@Given("User is on dashboard page")
 	public void user_is_on_dashboard_page() {
 		
-	//	Assert.assertEquals(LoginActions.verifyDashboardPage(), "Park Street | Dashboard");
+	//	SeleniumDriver.Wait().until(ExpectedConditions.urlContains("dashboard"));
+		
+	//Assert.assertEquals(LoginActions.verifyDashboardPage(), "Park Street | Dashboard");
 		
 		
 	  
@@ -41,7 +39,10 @@ public class MyProfileSteps {
 	@Then("Myprofile page is displayed")
 	public void myprofile_page_is_displayed() throws InterruptedException {
 		
-		SeleniumDriver.Wait().until(ExpectedConditions.urlContains("my-profile"));
+		
+		Thread.sleep(3000);
+		
+		//SeleniumDriver.Wait().until(ExpectedConditions.urlContains("my-profile"));
 		
 		//System.out.println("myprofile page is displayed");
 		System.out.println("User is on "+MyProfileActions.verifyMyProfilePagetitle());

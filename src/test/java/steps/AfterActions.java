@@ -2,13 +2,13 @@ package steps;
 
 
 
-import cucumber.api.java.After;
+import org.testng.annotations.AfterSuite;
 import io.cucumber.java.Scenario;
 import utils.SeleniumDriver;
 
 public class AfterActions {
 	
-	 @After
+	 @AfterSuite
 	    public static void tearDown(Scenario scenario) {
 	    	
 	    	//WebDriver driver=SeleniumDriver.getDriver();

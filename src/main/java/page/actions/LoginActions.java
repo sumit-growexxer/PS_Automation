@@ -2,8 +2,6 @@ package page.actions;
 
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-
 import page.locators.LoginLocators;
 import utils.SeleniumDriver;
 
